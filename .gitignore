@@ -1,0 +1,50 @@
+# --- Wyniki budowania .NET ---
+bin/
+obj/
+[Dd]ebug/
+[Rr]elease/
+artifacts/
+*.dll
+*.exe
+*.pdb
+*.user
+
+# --- Wyniki i artefakty testów ---
+TestResults/
+*.trx
+*.coverage
+*.coverlet.json
+coverage*.json
+coverage*.xml
+coverage*.info
+
+# --- Playwright ---
+# Przeglądarki i node pobierane do bin/.playwright - regenerowane przez `dotnet build`
+.playwright/
+playwright-report/
+test-results/
+# Ślady, nagrania i zrzuty z nieudanych przebiegów
+*.zip.trace
+trace.zip
+videos/
+screenshots/
+
+# --- Rider / JetBrains ---
+.idea/
+*.sln.DotSettings.user
+*.DotSettings.user
+
+# --- Visual Studio / VS Code ---
+.vs/
+.vscode/
+*.suo
+*.userprefs
+
+# --- NuGet ---
+packages/
+*.nupkg
+.nuget/
+
+# --- System ---
+.DS_Store
+Thumbs.db

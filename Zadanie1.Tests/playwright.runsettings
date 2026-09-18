@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RunSettings>
+  <!-- Konfiguracja Playwrighta czytana przez Microsoft.Playwright.TestAdapter. -->
+  <Playwright>
+    <BrowserName>chromium</BrowserName>
+    <!-- Timeout dla asercji Expect(...) w ms -->
+    <ExpectTimeout>10000</ExpectTimeout>
+    <LaunchOptions>
+      <!-- false = tryb okienkowy (widoczna przeglądarka), true = headless -->
+      <Headless>false</Headless>
+      <!-- "chrome" = prawdziwy Google Chrome; usuń, aby użyć Chromium dołączonego do Playwrighta -->
+      <Channel>chrome</Channel>
+      <!-- Zwolnienie akcji w ms - przydatne przy podglądaniu testu -->
+      <SlowMo>250</SlowMo>
+    </LaunchOptions>
+  </Playwright>
+
+  <RunConfiguration>
+    <!-- Testy UI: brak równoległości między klasami, żeby okna się nie nakładały -->
+    <MaxCpuCount>1</MaxCpuCount>
+  </RunConfiguration>
+</RunSettings>
+
